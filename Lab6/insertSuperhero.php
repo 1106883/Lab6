@@ -21,7 +21,7 @@ $surname = $_POST['surname'];
 $power = $_POST['power'];
 
 
-$sql = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES (".$firstname.", ".$surname.", ".$power.")";
+$sql = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES ('".$firstname."', '".$surname."', '".$power."')";
 
 
 if ($db->query($sql) === TRUE) {
