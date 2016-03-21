@@ -16,7 +16,7 @@ if($db -> connect_errno){
     die('Connect Failed['.$db->connect_error.']');
 }
 
-$firstname = $_POST['firstname'];
+$firstname = $_POST['forename'];
 $surname = $_POST['surname'];
 $power = $_POST['power'];
 
