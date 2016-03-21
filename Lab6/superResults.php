@@ -11,7 +11,7 @@
     $power = $_POST['power'];
 
     echo "<table>
-                <tr><td>".$forename.$surname."</td></tr>
+                <tr><td>".$forename." ".$surname."</td></tr>
                 <tr><td>".$gender."</td></tr>
                 <tr><td>".$power."</td></tr>
           </table>";
