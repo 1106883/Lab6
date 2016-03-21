@@ -5,5 +5,6 @@
  * Date: 21/03/2016
  * Time: 09:42
  */
+$planet = $_GET["planet"];
 echo "Hello".$planet;
 ?>
