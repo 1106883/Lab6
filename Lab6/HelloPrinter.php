@@ -6,5 +6,5 @@
  * Time: 09:42
  */
 $planet = $_GET["planet"];
-echo "Hello".$planet;
+echo "Hello ".$planet;
 ?>
