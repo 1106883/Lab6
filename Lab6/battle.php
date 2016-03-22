@@ -23,12 +23,15 @@ $results = $db->query($sql);
 
 echo "<form action='insertbattle.php' method='post'>
     <table>
-        <tr><td><label>Superhero </label><select name='Superhero'></td></tr>
-
-        <tr><td><label>Villain Fought </label><input type ='text' name='surname'></td></tr>
+        <tr><td><label>Superhero </label><select name='Superhero'></td></tr>";
+foreach ($results as $row) {
+    echo "<option value=" . $row['firstName'] . " " . $row['lastName'] . ">";
+    echo $row['firstName'] . " " . $row['lastName'];
+    echo "</option>";
+}
+echo "<tr><td><label>Villain Fought </label><input type ='text' name='surname'></td></tr>
     </table>
     </form>";
 
-$result->close();
 $db->close();
 ?>
