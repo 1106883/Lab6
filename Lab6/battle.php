@@ -27,7 +27,7 @@ echo "<form action='insertbattle.php' method='post'>
 while($row=$results->fetch_array())
 {
 
-    echo "<option value=".$row['firstName'].$row['m_menu_name']."</option>";
+    echo "<option value=".$row['firstName'].$row['m_menu_name'].$row['firstName'].$row['m_menu_name']."</option>";
 
 }
 
