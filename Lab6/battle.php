@@ -25,7 +25,7 @@ echo "<form action='insertbattle.php' method='post'>
     <table>
         <tr><td><label>Superhero </label><select name='Superhero'></td></tr>";
 foreach ($results as $row) {
-    echo "<option value=" . $row['firstName'] . " " . $row['lastName'] . ">";
+    echo "<re><option value=" . $row['firstName'] . " " . $row['lastName'] . ">";
     echo $row['firstName'] . " " . $row['lastName'];
     echo "</option>";
 }
