@@ -20,8 +20,7 @@ $sql = "SELECT * FROM superheros";
 $results = $db->query($sql);
 
         print "<table id='results'>\n";
-        echo "<th>Title</th><th>Platform</th><th>Genre</th><th>Year</th><th id='age'>Age Rating</th><th id='desc'>Description</th><th>Borrow</th>";
-        foreach ($sql as $row) {
+        foreach ($results as $row) {
             echo "<tr>";
             echo "<td>" . $row["superheroID"] . "</td>";
             echo "<td>" . $row["firstname"] . "</td>";
