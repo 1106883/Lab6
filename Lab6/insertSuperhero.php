@@ -30,4 +30,6 @@ if ($db->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $db->error;
 }
 
+$result->close();
+$db->close();
 ?>
