@@ -23,8 +23,8 @@ $results = $db->query($sql);
         foreach ($results as $row) {
             echo "<tr>";
             echo "<td>" . $row["superheroID"] . "</td>";
-            echo "<td>" . $row["firstname"] . "</td>";
-            echo "<td>" . $row["lastname"] . "</td>";
+            echo "<td>" . $row["firstName"] . "</td>";
+            echo "<td>" . $row["lastName"] . "</td>";
             echo "<td>" . $row["mainSuperpower"] . "</td>";
         }
         print "</table>\n";
