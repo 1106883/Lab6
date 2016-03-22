@@ -17,7 +17,7 @@ if($db -> connect_errno){
     die('Connect Failed['.$db->connect_error.']');
 }
 
-$sql = "SELECT firstname, lastname FROM superheros";
+$sql = "SELECT firstName, lastName FROM superheros";
 $results = $db->query($sql);
 
 
