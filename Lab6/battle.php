@@ -29,7 +29,7 @@ foreach ($results as $row) {
     echo $row['firstName'] . " " . $row['lastName'];
     echo "</option>";
 }
-echo "<tr><td><label>Villain Fought </label><input type ='text' name='surname'></td></tr>
+echo "</select><tr><td><label>Villain Fought </label><input type ='text' name='surname'></td></tr>
     </table>
     </form>";
 
